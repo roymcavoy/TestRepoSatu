@@ -74,10 +74,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PageDua.aspx" />
     <Content Include="PageSatu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageDua.aspx.cs">
+      <DependentUpon>PageDua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageDua.aspx.designer.cs">
+      <DependentUpon>PageDua.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageSatu.aspx.cs">
       <DependentUpon>PageSatu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
