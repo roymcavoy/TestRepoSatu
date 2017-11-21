@@ -9,6 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <Triggers><asp:AsyncPostBackTrigger ControlID="Timer1" /></Triggers>
+                <ContentTemplate>
+                    The server time now is: <asp:Label ID="lblTime" runat="server"></asp:Label>
+                </ContentTemplate>
+            </asp:UpdatePanel>
         </div>
     </form>
 </body>
