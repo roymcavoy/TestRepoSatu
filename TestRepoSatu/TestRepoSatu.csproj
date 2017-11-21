@@ -76,6 +76,7 @@
   <ItemGroup>
     <Content Include="PageDua.aspx" />
     <Content Include="PageSatu.aspx" />
+    <Content Include="PageTiga.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +93,13 @@
     </Compile>
     <Compile Include="PageSatu.aspx.designer.cs">
       <DependentUpon>PageSatu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageTiga.aspx.cs">
+      <DependentUpon>PageTiga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageTiga.aspx.designer.cs">
+      <DependentUpon>PageTiga.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
